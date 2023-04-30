@@ -1,0 +1,1628 @@
+:root{
+    --getex-white01: #ffffff;
+    --getex-white02: #f7f9fa;
+    --getex-white03: #f3f3f3;
+    --getex-orange01: #F2653B;
+    --getex-darkblue01: #262362;
+    --getex-black01: #010101;
+    --getex-green01: #42A846;
+    --getex-gray01: #93989A;
+    --getex-red01: #FF0000;
+    --getex-font01: 14px;
+    --getex-font02: 16px;
+    --getex-font03: 18px;
+    --getex-font04: 24px;
+}
+
+body{
+    font-family: outfit;
+}
+
+.flexBreak{
+    flex-basis: 100%;
+    height: 0px;
+}
+
+/* Sidebar */
+#getex-sidebar{
+    background-color: var(--getex-white02);
+    border-right: 1.5px solid var(--getex-white03);
+    max-width: 302px;
+    min-width: 302px;
+    padding-top: 36px;
+    padding-bottom: 34px;
+    min-height: 100vh;
+}
+#getex-sidebar .offcanvas-body{
+    padding: 58px 18px 0 18px;
+    width: 100%;
+}
+#getex-sidebar .navbar-nav a.nav-link{
+    display: flex;
+    font-size: var(--getex-font03);
+    color: var(--getex-gray01);
+    font-weight: 500;
+    line-height: 23.4px;
+    padding: 10px 19px 10px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#getex-sidebar .navbar-nav a.nav-link.active,#getex-sidebar .navbar-nav a.nav-link:hover{
+    background-color: rgb(38,35,98, 0.1);
+    color: var(--getex-darkblue01);
+}
+#getex-sidebar .navbar-nav a.nav-link.active svg path,#getex-sidebar .navbar-nav a.nav-link:hover svg path{
+    stroke: var(--getex-darkblue01);
+}
+#getex-sidebar .helpCenter{
+    text-align: center;
+    margin-top: auto;
+    margin-left: 34px;
+    margin-right: 34px;
+    padding: 39px 14px 14px 14px;
+    background-color: var(--getex-orange01);
+    border-radius: 15px;
+    color: var(--getex-white01);
+    font-size: var(--getex-font01);
+}
+#getex-sidebar .helpCenter .icon,#getex-sidebar .helpCenter .heading{
+    font-size: 18px;
+}
+#getex-sidebar .helpCenter .icon{
+    background-color: white;
+    border-radius: 100%;
+    padding: 11px 16px;
+    color: var(--getex-orange01);
+    margin-top: -64px;
+    margin-bottom: 8px;
+}
+#getex-sidebar .cta button{
+    background-color: var(--getex-white01);
+    font-size: var(--getex-font01);
+    color: var(--getex-orange01);
+    padding: 11px 45px;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 18.2px;
+    border: 0;
+}
+.nav-btn button.btn,.nav-btn button.btn:hover,.nav-btn button.btn:focus-visible{
+    background-color: transparent;
+    color: var(--getex-black01);
+    border:none;
+}
+
+/* Main Content */
+/* Header */
+header{
+    padding: 36px 34px 36px 24px;
+    border-bottom: 1.5px solid var(--getex-white03);
+    background-color: var(--getex-white01);
+}
+header #left-sec .btn, #filter-form .filter-tabs .btn{
+    border: 1.5px solid var(--getex-white03);
+    border-radius: 10px;
+    padding: 14px 16px;
+    background-color: var(--getex-white01);
+    color: var(--getex-black01);
+    font-weight: 500;
+    font-size: 16px;
+}
+header #left-sec .btn svg, #filter-form .filter-tabs .btn svg{
+    margin-right: 10px;
+}
+header #left-sec .btn:not(:last-child){
+    margin-right: 20px;
+}
+header #left-sec .btn.active,header #left-sec .btn:hover, #filter-form .filter-tabs .btn.active, #filter-form .filter-tabs .btn:hover{
+    background-color: var(--getex-darkblue01);
+    color: var(--getex-white01);
+}
+header #left-sec .btn.active svg path,header #left-sec .btn:hover svg path,#filter-form .filter-tabs .btn.active svg.svgFill path,#filter-form .filter-tabs .btn:hover svg.svgFill path{
+    fill: var(--getex-white01);
+}
+#filter-form .filter-tabs .btn.active svg.svgStroke path,#filter-form .filter-tabs .btn:hover svg.svgStroke path{
+    stroke: var(--getex-white01);
+}
+header #right-sec .top-search .input-group{
+    width: 163px;
+}
+header #right-sec .top-search .input-group-text, header #right-sec .top-search input, #filter-form .liensControl .sec-3 .search-domain .input-group-text, #filter-form .liensControl .sec-3 .search-domain input{
+    background-color: var(--getex-white02);
+    color: var(--getex-gray01);
+}
+header #right-sec .top-search .input-group-text,#filter-form .liensControl .sec-3 .search-domain .input-group-text{
+    border-radius: 15px 0 0px 15px;
+    padding: 14px 0 14px 16px;
+}
+header #right-sec .top-search input,#filter-form .liensControl .sec-3 .search-domain input{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    border-radius: 0 15px 15px 0;
+    padding: 14px 16px;
+}
+header #right-sec .notification-btn{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+header #right-sec .notification-btn a{
+    padding: 6px 12px;
+    color: var(--getex-black01);
+    font-size: 24px;
+    border: 1.5px solid var(--getex-white03);
+}
+header #right-sec .notification-btn a i::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--getex-red01);
+    position: absolute;
+    border-radius: 100%;
+    right: 14px;
+    top: 10px;
+}
+header #right-sec .dropdown button{
+    color: var(--getex-black01);
+}
+
+/* Content */
+.page-content{
+    padding: 34px 34px 44px 34px;
+}
+.page-heading,.section-heading{
+    padding-bottom: 30px;
+}
+.page-heading h5,.section-heading h5{
+    color: var(--getex-orange01);
+    font-size: var(--getex-font04);
+    font-weight: 600;
+}
+.page-heading p,.section-heading p{
+    color: var(--getex-gray01);
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-bottom: 0px;
+}
+/* Steps Counter */
+.steps-counter{
+    padding: 40px;
+    border: 1.5px solid var(--getex-white03);
+    background-color: var(--getex-white01);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    width: 30%;
+    margin-right: 34px;
+    align-self: flex-start;
+}
+.steps-counter .icon{
+    padding: 7px 9px;
+    background-color: var(--getex-white02);
+    border: 1px solid #93989A;
+    border-radius: 38px;
+    margin-right: 12px;
+}
+.steps-counter .current .icon,.steps-counter .finished .icon{
+    background-color: var(--getex-darkblue01);
+    border-color: var(--getex-darkblue01);
+}
+.steps-counter .current .icon svg.icon-fill path,.steps-counter .finished .icon svg.icon-fill path{
+    fill: var(--getex-white01);
+}
+.steps-counter .current .icon svg.icon-stroke path,.steps-counter .finished .icon svg.icon-stroke path{
+    stroke: var(--getex-white01);
+}
+.steps-counter .step-count{
+    color: var(--getex-black01);
+    font-weight: 500;
+    font-size: var(--getex-font02);
+    margin-right: 9px;
+    line-height: 130%;
+}
+.steps-counter .step-name{
+    font-weight: 400;
+    font-size: var(--getex-font01);
+    letter-spacing: 0.01em;
+    columns: var(--getex-gray01);
+    line-height: 130%;
+}
+.steps-counter .current .step-count,.steps-counter .current .step-name,.steps-counter .finished .step-count,.steps-counter .finished .step-name{
+    color: var(--getex-darkblue01);
+}
+.steps-counter .progress-bar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.steps-counter .progress-bar hr{
+    width: 40px;
+    rotate: 90deg;
+    border: 2px solid var(--getex-gray01);
+    border-radius: 12px;
+    opacity: 1;
+}
+.steps-counter .progress-bar.current hr,.steps-counter .progress-bar.finished hr{
+    border-color: #000000;
+}
+.steps{
+    width: 70%;
+}
+.steps .accordion{
+    margin-bottom: 32px;
+}
+.steps .accordion-item{
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+}
+.steps .accordion-button{
+    padding: 24px;
+    box-shadow: none;
+    font-size: var(--getex-font03);
+    font-weight: 500;
+    line-height: 23.4px;
+    color: var(--getex-black01);
+    border-bottom: 1.5px solid var(--getex-white03);
+    border-radius: 15px 15px 0 0 !important;
+}
+.steps .accordion-button:not(.collapsed){
+    background-color: var(--getex-white01);
+    color: var(--getex-black01);
+}
+.steps .accordion-button.collapsed{
+    border-radius: 15px !important;
+}
+.steps .accordion-button::after{
+    rotate: 180deg;
+}
+.steps .accordion-body{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.steps .accordion-body label.btn{
+    padding: 20px 24px;
+    border-radius: 15px;
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgb(202 202 202 / 20%);
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: var(--getex-font01);
+    color: var(--getex-gray01);
+    line-height: 16.8px;
+    width: 100%;
+    text-align: start;
+    background-color: var(--getex-white01);
+}
+.steps .accordion-body .btn-check:checked+label.btn{
+    border: 1.5px solid var(--getex-darkblue01);
+}
+.steps .accordion-body label.btn svg{
+    margin-right: 12px;
+}
+.steps .accordion-body .btn-check:checked+label.btn svg path:not(:last-child){
+    fill: var(--getex-green01);
+    stroke: var(--getex-green01);
+}
+.steps .accordion-body .btn-check:checked+label.btn svg path:last-child{
+    stroke: var(--getex-white01);
+}
+.steps .accordion-body label.btn img{
+    margin-right: 20px;
+}
+.steps .accordion-body .notice{
+    font-size: var(--getex-font01);
+    color: var(--getex-red01);
+    line-height: 21px;
+    margin-bottom: 24px;
+}
+.steps .accordion-body .notice a{
+    color: var(--getex-darkblue01);
+    text-decoration: underline;
+}
+.steps .accordion-body .next-btn{
+    align-self: end;
+}
+.steps .accordion-body .next-btn,.steps #makePM .pay-btn{
+    padding: 12px 22px;
+    background-color: var(--getex-darkblue01);
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    color: var(--getex-white01);
+    border-radius: 8px;
+}
+.steps .accordion-body form .input-group{
+    margin-bottom: 16px;
+}
+.steps .accordion-body form .input-group .input-group-text{
+    padding-left: 24px;
+    padding-right: 5px;
+    background-color: var(--getex-white01);
+    border-radius: 8px 0 0 8px;
+    border: 1.5px solid var(--getex-white03);
+    border-right: 0px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--getex-darkblue01);
+}
+.steps .accordion-body form .input-group input{
+    margin-right: 24px;
+    padding-left: 0px;
+    border-radius: 0 8px 8px 0 !important;
+    border: 1.5px solid var(--getex-white03);
+    border-left: 0px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #040404;
+}
+.steps .accordion-body form .input-group .btn{
+    border: 1.5px solid var(--getex-darkblue01);
+    border-radius: 8px !important;
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    color: var(--getex-darkblue01);
+    padding: 17px 52px;
+}
+.steps .accordion-body .totals{
+    column-gap: 26px;
+    margin-bottom: 24px;
+}
+.steps .accordion-body .totals > div{
+    padding: 16px;
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    row-gap: 16px;
+    font-size: var(--getex-font02);
+    line-height: 20.8px;
+}
+.steps .accordion-body .totals .initAmount{
+    background-color: rgb(66,168,70,0.1);
+    color: var(--getex-green01);
+}
+.steps .accordion-body .totals .initAmount .total,.steps .accordion-body .totals .commAmount .total,.steps .accordion-body .totals .billAmount .total{
+    font-weight: 700;
+    align-self: flex-end;
+}
+.steps .accordion-body .totals .commAmount{
+    background-color: rgb(38,35,98,0.1);
+    color: var(--getex-darkblue01);
+}
+.steps .accordion-body .totals .billAmount{
+    background-color: rgb(242,101,59,0.1);
+    color: var(--getex-orange01);
+}
+.steps #makePM .pay-btn{
+    align-self: center;
+}
+.steps #makePM .selectedPM{
+    column-gap: 12px;
+    padding: 18px 25px;
+    margin-bottom: 24px;
+    border: 1.5px solid #42A846;
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    align-self: center;
+}
+
+/* Order Page Start*/
+/* Order Summary */
+.order-summary{
+    border: 1.5px solid var(--getex-white03) ;
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    margin-bottom: 32px;
+}
+.order-summary table{
+    text-align: center;
+    margin-bottom: 0;
+}
+.order-summary table thead tr th,.order-summary table tbody tr > *{
+    border-bottom: 1.5px solid var(--getex-white03);
+}
+.order-summary table thead tr th{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    color: var(--getex-gray01);
+}
+.order-summary table thead tr th:last-child{
+    padding-right: 34px;
+}
+.order-summary table thead tr th:first-child{
+    padding-left: 34px;
+}
+.order-summary table tbody tr:last-child > *{
+    border-bottom: 0px;
+}
+.order-summary table tbody tr th{
+    padding-left: 34px;
+    color: var(--getex-darkblue01);
+}
+.order-summary table tbody tr td,.order-summary table tbody tr th{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: var(--getex-font02);
+}
+.order-summary table tbody tr td{
+    color: var(--getex-black01);
+}
+.order-summary table tbody tr td:last-child{
+    padding-right: 34px;
+}
+/* Payment Method */
+.selectionPM{
+    column-gap: 34px;
+    margin-bottom: 32px;
+}
+.selectionPM .payMethod{
+    padding-top: 24px;
+    border: 2px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    /* width: 50%; */
+}
+.selectionPM .payMethod .currBalSel,.selectionPM .payMethod .content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.selectionPM .payMethod .PMImage{
+    margin-bottom: 24px;
+    cursor: pointer;
+    align-self: center;
+}
+.selectionPM .payMethod .PMImage svg{
+    margin-right: 12px;
+}
+.selectionPM .payMethod .currBalSel{
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+.selectionPM .payMethod .currBalSel input{
+    margin-left: 0;
+    margin-right: 14px;
+    margin-top: 0;
+    margin: 0 14px 0 0;
+}
+.selectionPM .payMethod .currBalSel input:checked{
+    background-color: var(--getex-orange01);
+    border-color: var(--getex-orange01);
+}
+.selectionPM .payMethod .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.selectionPM .payMethod .content:last-child{
+    margin-bottom: 18px;
+}
+.selectionPM .payMethod .content .heading{
+    color: var(--getex-black01);
+}
+.selectionPM .payMethod .content .heading,.selectionPM .payMethod .content .price,.selectionPM .payMethod button.total-amt,.selectionPM .payMethod .currBalSel{
+    font-weight: 500;
+    font-size: var(--getex-font03);
+    line-height: 23.4px;
+}
+.selectionPM .payMethod .content .price{
+    color: var(--getex-gray01);
+}
+.selectionPM .payMethod .divider{
+    margin-top: 0;
+    height: 1.5px;
+    color: var(--getex-gray01);
+    margin-bottom: 12px;
+}
+.selectionPM .payMethod .content#difference{
+    margin-bottom: 20px;
+}
+.selectionPM .payMethod .content#difference .heading,.selectionPM .payMethod .content#difference .price{
+    color: var(--getex-orange01);
+}
+.selectionPM .payMethod button.total-amt{
+    padding: 16px 20px;
+    background-color: var(--getex-orange01);
+    color: var(--getex-white01);
+    border-radius: 0 0 15px 15px;
+}
+.selectionPM .payMethod button.total-amt .heading{
+    line-height: 15px;
+    text-align: start;
+}
+.selectionPM .payMethod button.total-amt .info{
+    font-size: var(--getex-font01);
+    font-weight: 400;
+}
+.selectionPM .payMethod.selected{
+    border-color: var(--getex-green01);
+}
+.selectionPM .payMethod.selected .PMImage svg path{
+    stroke: var(--getex-green01);
+    fill: var(--getex-green01);
+}
+.selectionPM .payMethod.selected .PMImage svg path:last-child{
+    stroke: var(--getex-white01);
+}
+.selectionPM .payMethod.selected button.total-amt{
+    background-color: var(--getex-green01);
+    border-radius: 0 0 10px 10px;
+}
+.bank-details{
+    padding: 24px 20px;
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+}
+.bank-details .transferToText,.bank-details .accnt-details{
+    font-weight: 500;
+    font-size: var(--getex-font03);
+    line-height: 23.4px;
+}
+.bank-details .transferToText,.bank-details .accnt-details .text{
+    color: var(--getex-black01);
+}
+.bank-details .accnt-details span.email,.bank-details .accnt-details span.address,.bank-details .accnt-details input,.profile-inner-container .profileCard .myCard .myKey .keyId input{
+    color: var(--getex-gray01);
+}
+.bank-details .accnt-details .input-group,.profile-inner-container .profileCard .myCard .myKey .keyId{
+    border-radius: 15px;
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+}
+.bank-details .accnt-details input,.profile-inner-container .profileCard .myCard .myKey .keyId input{
+    font-size: var(--getex-font01);
+    font-weight: 400;
+    line-height: 16.8px;
+    padding: 20px 0 20px 20px;
+    border: 0;
+    border-radius: 15px 0 0 15px;
+}
+.bank-details .accnt-details .input-group .input-group-text,.profile-inner-container .profileCard .myCard .myKey .keyId .input-group-text{
+    background-color: var(--getex-white01);
+    border: 0;
+    border-radius: 0 15px 15px 0;
+    padding-right: 20px;
+}
+.bank-details .accnt-details{
+    margin-top: 16px;
+}
+.bank-details .accnt-details > div{
+    width: 50%;
+}
+.bank-details .accnt-details .text{
+    margin-bottom: 8px;
+}
+.bank-details .info{
+    margin-top: 25px;
+}
+.bank-details .info svg{
+    margin-right: 12px;
+}
+.bank-details .info{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: var(--getex-gray01);
+}
+.bank-details .info span strong{
+    color: var(--getex-black01);
+}
+.bank-details .paybtn{
+    margin-top: 37px;
+    align-self: center;
+}
+.bank-details .paybtn button{
+    font-weight: 500;
+    font-size: var(--getex-font01);
+    line-height: 18.2px;
+    background-color: var(--getex-darkblue01);
+    padding: 12px 15px;
+    color: var(--getex-white01);
+}
+.bank-details .paybtn button:hover{
+    background-color: var(--getex-darkblue01);
+    color: var(--getex-white01);
+}
+
+/* My Domain Page */
+.page-title{
+    font-size: var(--getex-font04);
+    color: var(--getex-black01);
+    line-height: 31.2px;
+    margin-bottom: 32px;
+}
+#filter-form .filter-tabs{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#filter-form .filter-tabs button:not(:last-child){
+    margin-right: 24px;
+}
+#filter-form .filter-tabs button{
+    width: max-content;
+}
+#filter-form .filter-controls>div.filterControl{
+    display: flex;
+    column-gap: 24px;
+}
+#filter-form .filter-controls .filterControl:nth-child(n+2),.profile-inner-container .editUserDetailsForm form:nth-child(n+2){
+    display: none;
+}
+#filter-form .filter-controls section{
+    padding: 24px;
+    margin-top: 24px;
+    background: var(--getex-white01);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    column-gap: 43px;
+}
+#filter-form .filter-controls section input[type="text"],#filter-form .filter-controls section select{
+    max-width: 300px;
+}
+#filter-form .filter-controls .majesticControl .sec-1 .formControlInput{
+    width: 33.33%;
+    max-width: 300px;
+}
+#filter-form .filter-controls .advancedControl .sec-2{
+    width: 39%;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt{
+    column-gap: 16px;
+    justify-content: space-between;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt .form-check{
+    width: 18%;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt .form-check>label{
+    font-size: var(--getex-font01);
+    color: var(--getex-gray01);
+    font-family: outfit;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt .form-check .form-check-input:checked,#filter-form .filter-controls .liensControl .sec-2 .form-check .form-check-input:checked, #filter-form .filter-controls .liensControl .sec-3 .form-check .form-check-input:checked{
+    background-color: #6271EB;
+    border-color: #6271EB;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt .customDomainExt{
+    margin-top: 18px;
+    column-gap: 16px;
+}
+#filter-form .filter-controls .advancedControl .sec-2 .domainExt .customDomainExt button.btn{
+    border: 1.5px solid var(--getex-darkblue01);
+    border-radius: 8px;
+    color: var(--getex-darkblue01);
+    font-size: var(--getex-font02);
+    font-weight: 500;
+    line-height: 20.8px;
+    padding: 6px 14px;
+}
+#filter-form .filter-controls .liensControl .sec-1{
+    width: 35%;
+}
+#filter-form .filter-controls .liensControl .sec-2{
+    width: 62%;
+}
+#filter-form .filter-controls .liensControl .sec-2 .form-check>label,#filter-form .filter-controls .liensControl .sec-3 .form-check>label{
+    font-size: var(--getex-font01);
+    color: var(--getex-gray01);
+    font-family: outfit;
+}
+#filter-form .filter-controls .liensControl .sec-3 .search-domain{
+    margin-bottom: 26px;
+}
+#filter-form .filter-controls .liensControl .sec-3 .form-check{
+    width: 18%;
+}
+#filter-form .filter-controls .liensControl .sec-3 .domainNames div:nth-child(n+16){
+    display: none;
+}
+#filter-form .filter-controls section .formControlInput label,#filter-form .filter-controls section .formControlInput .minMaxVal{
+    margin-bottom: 28px;
+}
+#filter-form .filter-controls section label,#filter-form .filter-controls section span{
+    font-size: 20px;
+    font-family: 'Roboto';
+    line-height: 23.44px;
+}
+#filter-form .filter-controls section .formControlInput .minMaxVal span{
+    display: inline-block;
+    padding: 8px 11px;
+    width: auto;
+    height: 36px;
+    background-color: var(--getex-white03);
+    border-radius: 12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 21.6px;
+}
+/* Range Slider */
+#filter-form .filter-controls section .formControlInput select{
+    width: 300px;
+    font-size: var(--getex-font01);
+    color: var(--getex-gray01);
+}
+#filter-form .filter-controls section .formControlInput .rangeSlider{
+    height: 6px;
+    background-color: var(--getex-white03);
+    border: none;
+    border-radius: 0;
+    width: 300px;
+}
+#filter-form .filter-controls section .formControlInput .rangeSlider .ui-slider-range{
+    background-color: var(--getex-orange01);
+}
+#filter-form .filter-controls section .formControlInput .rangeSlider .ui-slider-handle{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: var(--getex-white01);
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    top: -10px;
+}
+#filter-form .submitFilter{
+    margin-top: 24px;
+    justify-content: end;
+    column-gap: 24px;
+}
+#filter-form .submitFilter button.btn, #filter-form .filter-controls .liensControl .sec-3 .show-hide-btn a.btn{
+    border: 1.5px solid var(--getex-darkblue01);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: var(--getex-font02);
+    font-weight: 500;
+    line-height: 20.8px;
+    width: 126px;
+}
+#filter-form .submitFilter button.resetFilter,#filter-form .filter-controls .liensControl .sec-3 .show-hide-btn a.btn{
+    color: var(--getex-darkblue01);
+}
+#filter-form .submitFilter button.applyFilter{
+    color: var(--getex-white01);
+    background-color: var(--getex-darkblue01);
+}
+/* Data Table */
+.dataTable{
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+    margin-top: 32px;
+    padding: 30px;
+    font-weight: 500;
+}
+.dataTable table thead{
+    font-size: var(--getex-font01);
+    color: var(--getex-gray01);
+}
+.dataTable table thead th{
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+.dataTable table tbody{
+    color: var(--getex-black01);
+}
+.dataTable table tbody td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dataTable table tbody,.dataTable table td.backlinks button,.dataTable table td.actions button{
+    font-size: 12px;
+}
+.dataTable table td.url span{
+    margin-bottom: 10px;
+    display: block;
+}
+.dataTable table td.url span,.dataTable table td.traffic p span,.dataTable table td.backlinks ul li,.dataTable table td.backlinks button,.dataTable table td.backlinks button:hover,.dataTable table td.valoflinks a,.dataTable table td.trustFlow a{
+    color: var(--getex-darkblue01);
+}
+.dataTable table td.traffic p,.dataTable table td.price .price-bidder{
+    color: var(--getex-gray01);
+}
+.dataTable table td.backlinks ul li,.dataTable table td.backlinks .modal-content .modal-body .backlinkName{
+    font-size: 14px;
+}
+.dataTable table td.backlinks ul li span,.dataTable table td.backlinks .modal-content .modal-body .backlinkName>span{
+    color: var(--getex-orange01);
+}
+.dataTable table td.backlinks ul li{
+    padding: 5px 0;
+    border: none;
+}
+.dataTable table td.backlinks ul li:first-child{
+    padding-top:0px;
+}
+.dataTable table td.backlinks button,.dataTable table td.backlinks button:hover{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+.dataTable table td.backlinks button,.dataTable table td.valoflinks a,.dataTable table td.trustFlow a{
+    text-decoration: underline;
+}
+/* Backlink Modal */
+.dataTable table td.backlinks .list-group .list-group-item i,.dataTable table td.backlinks .modal-content .modal-body .backlinkName i{
+    padding-left: 4px;
+}
+.dataTable table td.backlinks .modal-dialog{
+    --bs-modal-width: 90%;
+}
+.dataTable table td.backlinks .modal-content{
+    border: 1.5px solid var(--getex-white03);
+    border-radius: 15px;
+}
+.dataTable table td.backlinks .modal-header{
+    padding: 20px
+}
+.dataTable table td.backlinks .modal-header .modal-title{
+    font-size: var(--getex-font04);
+    color: var(--getex-gray01);
+    font-weight: 500;
+    line-height: 31.2px;
+    flex-grow: 1;
+    text-align: center;
+}
+.dataTable table td.backlinks .modal-header .btn-close{
+    background: url(./assets/icons/close-vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--getex-orange01);
+    border-radius: 100%;
+    opacity: 1;
+    padding: 7px;
+    font-size: 8px;
+    color: var(--getex-white01);
+}
+.dataTable table td.backlinks .modal-content .modal-body{
+    padding: 20px 16px;
+}
+.dataTable table td.backlinks .modal-content .modal-body .modalBacklinks{
+    column-gap: 40px;
+    row-gap: 20px;
+}
+.dataTable table td.backlinks .modal-content .modal-body .backlinkName{
+    width: 18%;
+}
+.dataTable table td.price .price-bidder{
+    font-weight: 400;
+}
+.dataTable table td.actions button{
+    background-color: var(--getex-darkblue01);
+    padding: 8px 28px;
+    color: var(--getex-white01);
+    border-radius: 100px;
+}
+.dataTable table td.actions button:hover{
+    background-color: var(--getex-darkblue01);
+    color: var(--getex-white01);
+}
+.dataTable table td.endIn span,.dataTable table td.win span{
+    display: block;
+    padding: 17px 8px;
+    border-radius: 12px;
+}
+.dataTable table td.endIn span{
+    background-color: rgba(242, 101, 59, 0.2);
+    color: var(--getex-orange01);
+}
+.dataTable table td.win span{
+    background: rgba(129, 198, 0, 0.2);
+    color: #81C600;
+}
+.dataTable table td.trustFlow{
+    position: relative;
+}
+.dataTable table td.trustFlow .progress{
+    width: 70px;
+    height: 70px !important;
+    float: left; 
+    line-height: 70px;
+    background: none;
+    margin-bottom: 10px;
+    box-shadow: none;
+    position: relative;
+    left: 30%;
+}
+.dataTable table td.trustFlow .progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--getex-gray01);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dataTable table td.trustFlow .progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.dataTable table td.trustFlow .progress .progress-left {
+    left: 0;
+}
+.dataTable table td.trustFlow .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 8px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.dataTable table td.trustFlow .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.dataTable table td.trustFlow .progress .progress-right {
+    right: 0;
+}
+.dataTable table td.trustFlow .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.dataTable table td.trustFlow .progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 12px;
+    color: var(--getex-black01);
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.dataTable table td.trustFlow .progress.blue .progress-bar {
+    border-color: #FF0000;
+}
+.dataTable table td.trustFlow .progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.dataTable table td.trustFlow .progress-bottom-text{
+    position: absolute;
+    top: 100px;
+    left: 38%;
+}
+@keyframes loading-1 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+}
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+/* Faqs */
+.faqs{
+    margin-top: 90px;
+    margin-bottom: 190px;
+}
+.faqs h5.sec-title{
+    font-size: var(--getex-font04);
+    font-weight: 600;
+    color: var(--getex-black01);
+    margin-bottom: 40px;
+}
+.faqs .accordion:not(:last-child){
+    margin-bottom: 20px;
+}
+.faqs .accordion .accordion-item{
+    border-radius: 15px;
+}
+.faqs .accordion .accordion-item .accordion-header button{
+    border-radius: 15px 15px 0 0;
+    background-color: var(--getex-white01);
+    color: #273240;
+    font-size: var(--getex-font04);
+    font-weight: 600;
+    line-height: 31.2px;
+    padding: 20px 24px;
+    box-shadow: unset;
+}
+.faqs .accordion .accordion-item .accordion-header button::after{
+    background-image: url("./assets/icons/Arrow upward.svg");
+    rotate: 180deg;
+}
+.faqs .accordion .accordion-item .accordion-header button.collapsed{
+    border-radius: 15px;
+}
+.faqs .accordion .accordion-item .accordion-body{
+    padding: 20px 0 0 0;
+    margin: 0px 24px 20px 24px;
+    border-top: 1px solid #dedede;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #585858;
+}
+/* Subscribe CTA */
+.subscribe-sec{
+    background-image: url(./assets/images/SubscribeCta.svg);
+    padding: 0 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 24px;
+    justify-content: space-between;
+    background-size: cover;
+}
+.subscribe-sec .assetImg{
+    margin-top: -100px;
+}
+.subscribe-sec .rightPart h5{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--getex-white01);
+    line-height: 56px;
+}
+.subscribe-sec .rightPart p{
+    font-size: var(--getex-font02);
+    color: var(--getex-white01);
+    line-height: 32px;
+}
+.subscribe-sec .rightPart .input-group{
+    padding: 14px;
+    background-color: var(--getex-white01);
+    border-radius: 12px;
+    box-shadow: 0px 30px 60px rgb(32 56 85 / 15%);
+}
+.subscribe-sec .rightPart .input-group input{
+    border: none;
+}
+.subscribe-sec .rightPart .input-group button{
+    border: none;
+    border-radius: 12px !important;
+    padding: 24px 34px;
+    font-size: var(--getex-font02);
+    font-weight: 700;
+    line-height: 20.16px;
+    background-color: var(--getex-darkblue01);
+    color: var(--getex-white01);
+}
+
+/* Footer */
+footer{
+    padding: 70px 120px;
+    margin-top: 60px;
+    background-color: var(--getex-darkblue01);
+    color: var(--getex-white01);
+}
+footer .service{
+    width: 30%;
+}
+footer .service h5,footer .social h5{
+    margin-bottom: 20px;
+}
+footer .service h5{
+    font-size: var(--getex-font04);
+    font-weight: 600;
+    line-height: 31.2px;
+}
+footer .social{
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+footer .social>div{
+    column-gap: 30px;
+    font-size: var(--getex-font02);
+}
+footer .social div i{
+    margin-right: 16px;
+}
+footer .botPart{
+    margin-top: 48px;
+    font-family: Poppins;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--getex-white01);
+}
+footer .botPart hr{
+    width: 100%;
+    border-top: 1px solid var(--getex-white01);
+    opacity: 1;
+    margin-bottom: 32px;
+}
+footer .botPart a{
+    text-decoration: none;
+    color: var(--getex-white01);
+}
+
+/* Profile Page */
+#main-container>.profile-outer-container{
+    padding: 0;
+}
+.page-content .profileImg{
+    position: relative;
+}
+.page-content .profileImg img{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+.page-content .profileImg .editProfileImg{
+    position: absolute;
+    bottom: 34px;
+    right: 34px;
+    background-color: var(--getex-white01);
+    border-radius: 100%;
+    display: flex;
+    padding: 8px;
+}
+.page-content .profileImg .editProfileImg>img{
+    height: 20px;
+    width: 20px;
+}
+#main-container .profile-inner-container{
+    padding: 0 34px 44px 34px;
+}
+.profile-inner-container .profileCard{
+    margin-top: -100px;
+    z-index: 99;
+    margin-bottom: 24px;
+}
+.profile-inner-container .profileCard .myCard{
+    padding: 24px;
+    background-color: var(--getex-white01);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+}
+.profile-inner-container .profileCard .myCard>div{
+    column-gap: 24px;
+}
+.profile-inner-container .profileCard .myCard .myProfileImg img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.profile-inner-container .profileCard .myCard .myDetails{
+    row-gap: 20px;
+    align-self: center;
+}
+.profile-inner-container .profileCard .myCard .myDetails .myName{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--getex-black01);
+    line-height: 26px;
+}
+.profile-inner-container .profileCard .myCard .myDetails .myEmail{
+    font-size: 14px;
+    line-height: 25.2px;
+    color: var(--getex-black01);
+}
+.profile-inner-container .profileCard .myCard .myKey .keyName{
+    font-size: var(--getex-font02);
+    font-weight: 500;
+    color: var(--getex-black01);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.profile-inner-container .profileCard .myCard .myKey .keyId{
+    border: none;
+}
+.profile-inner-container .profileCard .myCard .myKey .keyId input,.profile-inner-container .profileCard .myCard .myKey .keyId .input-group-text{
+    background-color: var(--getex-white02);
+}
+.profile-inner-container .profileCard .myCard .myKey .keyId input{
+    padding: 14px 0 14px 16px;
+    width: 360px;
+}
+.profile-inner-container .profileCard .myCard .myKey .keyId .input-group-text{
+    padding: 14px 16px 14px 16px;
+}
+.profile-inner-container .formStepsControls{
+    column-gap: 12px;
+}
+.profile-inner-container .formStepsControls .btn{
+    border-radius: 20px;
+    color: var(--getex-gray01);
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    width: max-content;
+}
+.profile-inner-container .formStepsControls .btn.active,.profile-inner-container .formStepsControls .btn:hover{
+    background-color: var(--getex-black01);
+    color: var(--getex-white01);
+}
+
+/* Edit User Profile Form */
+.profile-inner-container .editUserDetailsForm form .card{
+    border: 1.5px solid var(--getex-white03);
+    box-shadow: 0px 4px 100px rgba(202, 202, 202, 0.2);
+    border-radius: 15px;
+}
+.profile-inner-container .editUserDetailsForm form .card-header{
+    background-color: var(--getex-white01);
+    padding: 24px;
+    font-size: var(--getex-font03);
+    font-weight: 500;
+    color: var(--getex-black01);
+    border-bottom: 1.5px solid var(--getex-white03);
+    border-radius: 15px 15px 0 0;
+}
+.profile-inner-container .editUserDetailsForm form .card-body{
+    padding: 24px;
+}
+.profile-inner-container .editUserDetailsForm form .card-body>div:not(:last-child){
+    margin-bottom: 24px;
+}
+.profile-inner-container .editUserDetailsForm form .editUserImg .avatarName{
+    font-size: var(--getex-font02);
+    font-weight: 500;
+    line-height: 20.8px;
+    color: var(--getex-black01);
+}
+.profile-inner-container .editUserDetailsForm form .editUserImg .userAvatar{
+    margin-left: 24px;
+    margin-right: 41px;
+    border-radius: 100%;
+}
+.profile-inner-container .editUserDetailsForm form .editUserImg .userAvatarChange a{
+    background-color: var(--getex-darkblue01);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    color: var(--getex-white01);
+    border: none;
+    cursor: pointer;
+}
+.profile-inner-container .editUserDetailsForm form .card-body .row label{
+    font-size: var(--getex-font02);
+    font-weight: 500;
+    line-height: 20.8px;
+    color: var(--getex-black01);
+    margin-bottom: 12px;
+}
+.profile-inner-container .editUserDetailsForm form .card-body .row label span.req{
+    color: var(--getex-red01);
+}
+.profile-inner-container .editUserDetailsForm form .card-body .row input{
+    background-color: var(--getex-white02);
+    border-radius: 15px;
+    font-size: var(--getex-font01);
+    line-height: 25.2px;
+    color: var(--getex-black01);
+    padding: 14px 16px;
+    border: none;
+}
+.profile-inner-container .editUserDetailsForm form .card-body .row .input-group .input-group-text{
+    background-color: var(--getex-white02);
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+.profile-inner-container .editUserDetailsForm form .card-body .row .input-group input{
+    padding-left: 0;
+}
+.profile-inner-container .editUserDetailsForm form .saveDetails button{
+    background-color: var(--getex-darkblue01);
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: var(--getex-font01);
+    font-weight: 500;
+    line-height: 18.2px;
+    color: var(--getex-white01);
+    border: none;
+    margin-top: 48px;
+}
+.profile-inner-container .editUserDetailsForm form#updatePass .generateResetLink,.profile-inner-container .editUserDetailsForm form#deleteUser .deleteUserBtn{
+    padding: 17px 26px;
+    border: 1.5px solid var(--getex-darkblue01);
+    border-radius: 8px;
+    color: var(--getex-darkblue01);
+    text-decoration: none;
+}
+
+
+/* Media Queries */
+@media (max-width:991px) {
+    #getex-sidebar{
+        overflow-y: auto;
+    }
+    header{
+        padding-bottom: 24px;
+    }
+    #getex-sidebar .offcanvas-header{
+        padding-bottom: 0;
+    }
+    #getex-sidebar .offcanvas-body{
+        padding-top: 0;
+    }
+    #getex-sidebar .navbar-nav hr{
+        height: 1px;
+        border-color: #E4E6EE;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .steps-counter,.steps{
+        width: 100%;
+    }
+    .steps-counter{
+        margin-right: 0;
+        margin-bottom: 34px;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    .steps-counter .icon{
+        padding: 4px 5px;
+        margin-right: 9px;
+    }
+    .steps-counter .progress-bar hr{
+        rotate: 0deg;
+        width: 30px;
+    }
+    .steps-counter .step-count{
+        display: block;
+        margin-right: 0;
+    }
+    .dataTable table{
+        width: max-content;
+    }
+    .subscribe-sec{
+        padding: 0 30px;
+    }
+    .subscribe-sec .assetImg img{
+        width: 200px;
+    }
+    .subscribe-sec .rightPart{
+        padding-left: 20px;
+    }
+    .subscribe-sec .rightPart h5{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .subscribe-sec .rightPart p{
+        font-size: var(--getex-font01);
+        line-height: 22px;
+    }
+    .subscribe-sec .rightPart .input-group{
+        padding: 5px;
+    }
+    .subscribe-sec .rightPart .input-group input{
+        padding: 0 0 0 10px;
+    }
+    .subscribe-sec .rightPart .input-group button{
+        padding: 12px 22px;
+    }
+    footer{
+        padding: 70px 40px;
+    }
+    footer .service h5, footer .social h5{
+        margin-bottom: 10px;
+    }
+    #filter-form .filter-controls .advancedControl .sec-2{
+        width: 100%;
+    }
+    #filter-form .filter-controls .liensControl .sec-1,#filter-form .filter-controls .liensControl .sec-2{
+        width: 48%;
+    }
+    #filter-form .filter-controls .liensControl .sec-3 .form-check{
+        width: 22%;
+    }
+}
+@media (max-width:767px) {
+    header{
+        padding: 24px 20px;
+    }
+    header #right-sec .top-search .input-group{
+        width: 140px;
+    }
+    header #right-sec .top-search .input-group-text{
+        padding: 9px 0 9px 16px;
+    }
+    header #right-sec .top-search .input-group-text svg{
+        width: 22px;
+    }
+    header #right-sec .notification-btn{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    header #right-sec .notification-btn a{
+        font-size: var(--getex-font03);
+        padding: 6px 10px;
+    }
+    header #right-sec .notification-btn a i::after{
+        right: 10px;
+        top: 9px;
+    }
+    header #right-sec .dropdown button img{
+        width: 42px;
+        height: 42px;
+    }
+    .page-content{
+        padding: 34px 20px 44px 20px;
+    }
+    .steps-counter{
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .steps-counter .icon{
+        display: none;
+    }
+    .steps .accordion-body{
+        padding: 15px;
+    }
+    .steps .accordion-body .totals{
+        row-gap: 20px;
+    }
+    .steps .accordion-body form .input-group input,.steps .accordion-body form .input-group .input-group-text{
+        font-size: var(--getex-font03);
+    }
+    .steps .accordion-body form .input-group .input-group-text{
+        padding-left: 14px;
+    }
+    .steps .accordion-body form .input-group .btn{
+        padding: 15px 20px;
+    }
+    .steps .accordion-body label.btn{
+        padding: 10px;
+    }
+    .steps .accordion-body label.btn svg{
+        margin-right: 5px;
+    }
+    .steps .accordion-body label .pm-details img{
+        display: block;
+    }
+    .steps .accordion-body label.btn img{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .order-summary table thead tr th:first-child{
+        padding-left: 15px;
+    }
+    .order-summary table thead tr th:last-child{
+        padding-right: 15px;
+    }
+    .selectionPM{
+        row-gap: 24px;
+    }
+    .bank-details .accnt-details > div{
+        width: 100%;
+    }
+    .profile-inner-container .profileCard .myCard .myKey .keyId input{
+        width: max-content;
+    }
+    #filter-form .filter-controls section{
+        row-gap: 35px;
+    }
+    #filter-form .filter-controls section .formControlInput .rangeSlider{
+        width: 100%;
+    }
+    #filter-form .filter-controls .majesticControl .sec-1 .formControlInput{
+        width: 100%;
+        max-width: 100%;
+    }
+    #filter-form .filter-controls section .formControlInput select{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #filter-form .filter-controls .liensControl .sec-1, #filter-form .filter-controls .liensControl .sec-2{
+        width: 100%;
+    }
+    #filter-form .filter-controls .liensControl section.sec-2,#filter-form .filter-controls .liensControl section.sec-3{
+        row-gap: 0;
+    }
+    #filter-form .filter-controls .liensControl .sec-3 .form-check{
+        width: 50%;
+    }
+    .dataTable table td.backlinks .modal-content .modal-body .backlinkName{
+        width: 100%;
+    }
+    .faqs .accordion .accordion-item .accordion-header button{
+        font-size: 20px;
+    }
+    .faqs .accordion .accordion-item .accordion-body{
+        font-size: var(--getex-font02);
+    }
+    .subscribe-sec{
+        padding: 20px 30px;
+    }
+    .subscribe-sec .assetImg{
+        margin-top: -120px;
+        margin-bottom: 20px;
+    }
+    .subscribe-sec .rightPart{
+        padding-left: 0;
+    }
+    footer{
+        padding: 40px;
+    }
+    footer .topPart{
+        row-gap: 30px;
+    }
+    footer .service{
+        width: 100%;
+    }
+    footer .botPart{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    footer .botPart .copyright{
+        margin: 10px 0 10px 0;
+    }
+    #main-container .profile-inner-container{
+        padding: 0 24px 44px 24px;
+    }
+    .page-content .profileImg img{
+        height: 92px;
+    }
+    .page-content .profileImg .editProfileImg{
+        bottom: 10px;
+        right: 10px;
+    }
+    .profile-inner-container .profileCard{
+        margin-top: -25px;
+    }
+    .profile-inner-container .profileCard .myCard .myProfileImg img{
+        width: 100%;
+        height: auto;
+    }
+    .profile-inner-container .profileCard .myCard>div{
+        column-gap: 12px;
+    }
+    .profile-inner-container .profileCard .myCard .myDetails{
+        row-gap: 14px;
+    }
+    .profile-inner-container .formStepsControls{
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 86vw;
+    }
+    .profile-inner-container .editUserDetailsForm form .card-body .row{
+        row-gap: 24px;
+    }
+    .profile-inner-container .editUserDetailsForm form .card-body .editUserImg{
+        row-gap: 24px;
+    }
+    .profile-inner-container .editUserDetailsForm form .editUserImg .userAvatar{
+        margin: 0;
+    }
+}
+@media (min-width:992px) {
+    .offcanvas{
+        visibility: visible;
+        position: inherit;
+    }
+    .offcanvas.offcanvas-start{
+        transform: none;
+    }
+}
+@media (min-width:1200px){
+    #getex-sidebar .navbar-nav a.mob-links{
+        display: none;
+    }
+}

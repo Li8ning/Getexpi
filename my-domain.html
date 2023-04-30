@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Domain - getexpi</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Outer Container -->
+        <div class="d-flex flex-column">
+            <!-- Header -->
+            <header class="d-flex flex-row justify-content-between align-items-center">
+                <div class="d-none d-lg-flex brand-logo">
+                    <a class="navbar-brand text-center" href="./"><img src="assets/images/getexpi logo.svg" alt=""></a>
+                </div>
+                <div class="nav-btn d-lg-none d-flex">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#getex-sidebar" aria-controls="getex-sidebar">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <!-- Sidebar -->
+                    <div class="d-flex flex-column offcanvas offcanvas-start" id="getex-sidebar">
+                        <nav class="navbar flex-column justify-content-center mb-5">
+                            <!-- Top -->
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand text-center" href="./"><img src="assets/images/getexpi logo.svg" alt=""></a>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="navbar-nav">
+                                    <hr class="d-block d-lg-none">
+                                    <a class="nav-link mob-links" aria-current="page" href="#">
+                                        <svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1_770)">
+                                            <path d="M10.8 0C7.93566 0 5.18864 1.13785 3.16325 3.16325C1.13785 5.18864 0 7.93566 0 10.8C0 13.6643 1.13785 16.4114 3.16325 18.4368C5.18864 20.4621 7.93566 21.6 10.8 21.6C13.6643 21.6 16.4114 20.4621 18.4368 18.4368C20.4621 16.4114 21.6 13.6643 21.6 10.8C21.6 7.93566 20.4621 5.18864 18.4368 3.16325C16.4114 1.13785 13.6643 0 10.8 0V0ZM1.332 11.616H4.344C4.392 12.708 4.5444 13.7928 4.8 14.856H2.208C1.72465 13.8371 1.42795 12.7397 1.332 11.616ZM11.616 5.136V1.428C12.7724 1.86747 13.7227 2.72355 14.28 3.828C14.526 4.2444 14.7432 4.6776 14.928 5.124L11.616 5.136ZM15.48 6.756C15.7584 7.8156 15.924 8.9016 15.972 9.996H11.616V6.756H15.48ZM9.984 1.428V5.136H6.672C6.85711 4.68924 7.07366 4.25615 7.32 3.84C7.87496 2.73102 8.82551 1.87039 9.984 1.428ZM9.984 6.756V9.996H5.64C5.688 8.9016 5.8536 7.8156 6.132 6.756H9.984ZM4.344 9.984H1.332C1.42795 8.86031 1.72465 7.76294 2.208 6.744H4.8C4.54391 7.80678 4.3912 8.89183 4.344 9.984ZM5.64 11.616H9.984V14.856H6.132C5.85364 13.7965 5.68872 12.7104 5.64 11.616ZM9.996 16.416V20.124C8.83958 19.6845 7.88934 18.8285 7.332 17.724C7.08566 17.3079 6.86911 16.8748 6.684 16.428L9.996 16.416ZM11.616 20.124V16.476H14.928C14.7429 16.9228 14.5263 17.3559 14.28 17.772C13.7227 18.8765 12.7724 19.7325 11.616 20.172V20.124ZM11.616 14.796V11.556H15.96C15.9113 12.6504 15.7464 13.7365 15.468 14.796H11.616ZM17.268 11.556H20.28C20.184 12.6797 19.8874 13.7771 19.404 14.796H16.8C17.052 13.752 17.2044 12.6876 17.256 11.616L17.268 11.556ZM17.268 9.936C17.213 8.86357 17.0563 7.79879 16.8 6.756H19.392C19.8756 7.776 20.172 8.8728 20.268 9.996L17.268 9.936ZM18.468 5.136H16.32C15.9313 4.04436 15.368 3.02307 14.652 2.112C16.1453 2.7823 17.4423 3.82326 18.42 5.136H18.468ZM6.948 2.112C6.23198 3.02307 5.66865 4.04436 5.28 5.136H3.18C4.15767 3.82326 5.45474 2.7823 6.948 2.112ZM3.168 16.512H5.28C5.66865 17.6036 6.23198 18.6249 6.948 19.536C5.45061 18.8556 4.15314 17.8019 3.18 16.476L3.168 16.512ZM14.64 19.536C15.356 18.6249 15.9193 17.6036 16.308 16.512H18.42C17.4364 17.8072 16.1398 18.8312 14.652 19.488L14.64 19.536Z" fill="#93989A"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1_770">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        My Domain
+                                    </a>
+                                    <a class="nav-link mob-links" aria-current="page" href="#">
+                                        <svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1_763)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.686 10.462C2.45379 10.6941 2.26958 10.9698 2.1439 11.2731C2.01822 11.5765 1.95354 11.9016 1.95354 12.23C1.95354 12.5583 2.01822 12.8835 2.1439 13.1868C2.26958 13.4902 2.45379 13.7658 2.686 13.998L5.515 16.826C5.88606 17.1967 6.36431 17.4413 6.88207 17.5252C7.39983 17.6091 7.93086 17.528 8.4 17.2935C8.86914 17.0589 9.25262 16.6827 9.49615 16.2182C9.73969 15.7536 9.83095 15.2243 9.757 14.705L10.73 13.732L16.808 20.746C17.0593 21.0356 17.3675 21.2704 17.7134 21.4357C18.0594 21.6011 18.4357 21.6934 18.8189 21.707C19.2021 21.7205 19.5839 21.6551 19.9407 21.5146C20.2975 21.3742 20.6216 21.1618 20.8927 20.8907C21.1638 20.6195 21.3762 20.2955 21.5166 19.9387C21.6571 19.5819 21.7226 19.2 21.709 18.8168C21.6954 18.4337 21.6031 18.0574 21.4378 17.7114C21.2724 17.3655 21.0376 17.0572 20.748 16.806L13.735 10.727L14.707 9.75498C15.2265 9.8292 15.7561 9.73808 16.221 9.49452C16.6858 9.25096 17.0621 8.86731 17.2968 8.39793C17.5314 7.92856 17.6124 7.39725 17.5283 6.87928C17.4441 6.36132 17.1991 5.88296 16.828 5.51198L14 2.68498C13.629 2.31372 13.1505 2.06866 12.6324 1.98453C12.1143 1.90041 11.5829 1.98147 11.1135 2.21625C10.644 2.45103 10.2604 2.8276 10.0169 3.29259C9.77345 3.75759 9.68252 4.28741 9.757 4.80698L4.807 9.75598C4.423 9.70097 4.03146 9.73623 3.66346 9.85896C3.29546 9.98168 2.96113 10.1885 2.687 10.463L2.686 10.462ZM12.94 8.69498L8.698 12.937L6.576 10.816L10.819 6.57298L12.94 8.69498ZM4.1 12.584C4.05351 12.5376 4.01663 12.4824 3.99144 12.4218C3.96626 12.3611 3.95327 12.296 3.95323 12.2303C3.95318 12.1646 3.96607 12.0996 3.99117 12.0389C4.01627 11.9781 4.05308 11.923 4.0995 11.8765C4.14593 11.83 4.20105 11.7931 4.26173 11.7679C4.32241 11.7427 4.38745 11.7297 4.45315 11.7297C4.51885 11.7297 4.58391 11.7425 4.64462 11.7676C4.70534 11.7927 4.76052 11.8296 4.807 11.876L7.636 14.705C7.68376 14.7511 7.72185 14.8063 7.74805 14.8673C7.77426 14.9283 7.78805 14.9939 7.78863 15.0603C7.78921 15.1267 7.77655 15.1925 7.75141 15.254C7.72627 15.3154 7.68915 15.3712 7.6422 15.4182C7.59525 15.4651 7.53943 15.5022 7.47798 15.5274C7.41653 15.5525 7.35069 15.5652 7.2843 15.5646C7.21791 15.564 7.1523 15.5502 7.0913 15.524C7.0303 15.4978 6.97513 15.4597 6.929 15.412L4.1 12.583V12.584ZM11.878 4.80498C11.8302 4.75885 11.7922 4.70368 11.766 4.64268C11.7397 4.58168 11.726 4.51607 11.7254 4.44968C11.7248 4.38329 11.7375 4.31745 11.7626 4.256C11.7877 4.19455 11.8249 4.13873 11.8718 4.09178C11.9188 4.04483 11.9746 4.00771 12.036 3.98257C12.0975 3.95743 12.1633 3.94478 12.2297 3.94535C12.2961 3.94593 12.3617 3.95972 12.4227 3.98593C12.4837 4.01213 12.5389 4.05022 12.585 4.09798L15.414 6.92698C15.4618 6.9731 15.4998 7.02827 15.5261 7.08928C15.5523 7.15028 15.5661 7.21589 15.5666 7.28228C15.5672 7.34867 15.5546 7.41451 15.5294 7.47596C15.5043 7.5374 15.4671 7.59323 15.4202 7.64018C15.3733 7.68712 15.3174 7.72425 15.256 7.74939C15.1945 7.77453 15.1287 7.78718 15.0623 7.7866C14.9959 7.78603 14.9303 7.77223 14.8693 7.74603C14.8083 7.71982 14.7531 7.68173 14.707 7.63398L11.878 4.80498ZM18.32 19.436L12.312 12.504L12.506 12.309L19.439 18.317C19.5189 18.389 19.5832 18.4766 19.6282 18.5743C19.6731 18.672 19.6977 18.7779 19.7005 18.8854C19.7032 18.9929 19.6841 19.0999 19.6442 19.1998C19.6043 19.2996 19.5445 19.3904 19.4685 19.4664C19.3924 19.5425 19.3017 19.6023 19.2018 19.6422C19.1019 19.682 18.9949 19.7012 18.8874 19.6984C18.7799 19.6957 18.674 19.6711 18.5763 19.6261C18.4786 19.5812 18.3911 19.5168 18.319 19.437L18.32 19.436Z" fill="#93989A"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_1_763">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        My Auction
+                                    </a>
+                                    <a class="nav-link mob-links" aria-current="page" href="#">
+                                        <svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.6328 6.64689C21.3187 5.91948 20.8657 5.2603 20.2992 4.70627C19.7323 4.15058 19.064 3.70898 18.3305 3.40549C17.5699 3.08953 16.7541 2.92781 15.9305 2.9297C14.775 2.9297 13.6477 3.24611 12.668 3.84377C12.4336 3.98674 12.2109 4.14377 12 4.31486C11.7891 4.14377 11.5664 3.98674 11.332 3.84377C10.3523 3.24611 9.225 2.9297 8.06953 2.9297C7.2375 2.9297 6.43125 3.08908 5.66953 3.40549C4.93359 3.71017 4.27031 4.14845 3.70078 4.70627C3.13359 5.25968 2.6805 5.91901 2.36719 6.64689C2.04141 7.40392 1.875 8.20783 1.875 9.03517C1.875 9.81564 2.03438 10.6289 2.35078 11.4563C2.61563 12.1477 2.99531 12.8649 3.48047 13.5891C4.24922 14.7352 5.30625 15.9305 6.61875 17.1422C8.79375 19.1508 10.9477 20.5383 11.0391 20.5945L11.5945 20.9508C11.8406 21.1078 12.157 21.1078 12.4031 20.9508L12.9586 20.5945C13.05 20.536 15.2016 19.1508 17.3789 17.1422C18.6914 15.9305 19.7484 14.7352 20.5172 13.5891C21.0023 12.8649 21.3844 12.1477 21.6469 11.4563C21.9633 10.6289 22.1227 9.81564 22.1227 9.03517C22.125 8.20783 21.9586 7.40392 21.6328 6.64689V6.64689ZM12 19.0969C12 19.0969 3.65625 13.7508 3.65625 9.03517C3.65625 6.64689 5.63203 4.71095 8.06953 4.71095C9.78281 4.71095 11.2688 5.6672 12 7.06408C12.7313 5.6672 14.2172 4.71095 15.9305 4.71095C18.368 4.71095 20.3438 6.64689 20.3438 9.03517C20.3438 13.7508 12 19.0969 12 19.0969Z" fill="#93989A"/>
+                                        </svg>
+                                        Favorite
+                                    </a>
+                                    <a class="nav-link mob-links" aria-current="page" href="#">
+                                        <svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 3.99999H2V5.99999H4.3L7.58 15C7.78631 15.5835 8.16807 16.089 8.67294 16.4471C9.1778 16.8051 9.78106 16.9983 10.4 17H19V15H10.4C10.1945 14.9999 9.99399 14.9365 9.8258 14.8184C9.6576 14.7003 9.52987 14.5333 9.46 14.34L9 13H18.28C18.714 12.9994 19.1361 12.8576 19.4824 12.596C19.8288 12.3344 20.0806 11.9673 20.2 11.55L22 5.26999C22.0406 5.13868 22.0538 5.00039 22.0386 4.86377C22.0234 4.72715 21.9802 4.59512 21.9117 4.47595C21.8432 4.35677 21.7509 4.25299 21.6404 4.1711C21.53 4.08921 21.4039 4.03096 21.27 3.99999C21.1806 3.98543 21.0894 3.98543 21 3.99999ZM18.25 11H8.25L6.43 5.99999H19.67L18.25 11Z" fill="#93989A"/>
+                                            <path d="M10.5 21C11.3284 21 12 20.3284 12 19.5C12 18.6716 11.3284 18 10.5 18C9.67157 18 9 18.6716 9 19.5C9 20.3284 9.67157 21 10.5 21Z" fill="#93989A"/>
+                                            <path d="M16.5 21C17.3284 21 18 20.3284 18 19.5C18 18.6716 17.3284 18 16.5 18C15.6716 18 15 18.6716 15 19.5C15 20.3284 15.6716 21 16.5 21Z" fill="#93989A"/>
+                                        </svg>
+                                        Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Bottom -->
+                        <div class="helpCenter d-flex flex-column align-items-center">
+                            <div class="icon"><i class="bi bi-question-circle-fill"></i></div>
+                            <div class="heading mb-3">Help Center</div>
+                            <div class="content mb-4">Having trouble in getexpi?
+                                Please contact us for more question</div>
+                            <div class="cta mt-1">
+                                <button type="button" class="btn btn-info">Go To Help Center</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex flex-row" id="left-sec">
+                    <a type="button" class="btn active" href="my-domain.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_770)">
+                            <path d="M10.8 0C7.93566 0 5.18864 1.13785 3.16325 3.16325C1.13785 5.18864 0 7.93566 0 10.8C0 13.6643 1.13785 16.4114 3.16325 18.4368C5.18864 20.4621 7.93566 21.6 10.8 21.6C13.6643 21.6 16.4114 20.4621 18.4368 18.4368C20.4621 16.4114 21.6 13.6643 21.6 10.8C21.6 7.93566 20.4621 5.18864 18.4368 3.16325C16.4114 1.13785 13.6643 0 10.8 0V0ZM1.332 11.616H4.344C4.392 12.708 4.5444 13.7928 4.8 14.856H2.208C1.72465 13.8371 1.42795 12.7397 1.332 11.616ZM11.616 5.136V1.428C12.7724 1.86747 13.7227 2.72355 14.28 3.828C14.526 4.2444 14.7432 4.6776 14.928 5.124L11.616 5.136ZM15.48 6.756C15.7584 7.8156 15.924 8.9016 15.972 9.996H11.616V6.756H15.48ZM9.984 1.428V5.136H6.672C6.85711 4.68924 7.07366 4.25615 7.32 3.84C7.87496 2.73102 8.82551 1.87039 9.984 1.428ZM9.984 6.756V9.996H5.64C5.688 8.9016 5.8536 7.8156 6.132 6.756H9.984ZM4.344 9.984H1.332C1.42795 8.86031 1.72465 7.76294 2.208 6.744H4.8C4.54391 7.80678 4.3912 8.89183 4.344 9.984ZM5.64 11.616H9.984V14.856H6.132C5.85364 13.7965 5.68872 12.7104 5.64 11.616ZM9.996 16.416V20.124C8.83958 19.6845 7.88934 18.8285 7.332 17.724C7.08566 17.3079 6.86911 16.8748 6.684 16.428L9.996 16.416ZM11.616 20.124V16.476H14.928C14.7429 16.9228 14.5263 17.3559 14.28 17.772C13.7227 18.8765 12.7724 19.7325 11.616 20.172V20.124ZM11.616 14.796V11.556H15.96C15.9113 12.6504 15.7464 13.7365 15.468 14.796H11.616ZM17.268 11.556H20.28C20.184 12.6797 19.8874 13.7771 19.404 14.796H16.8C17.052 13.752 17.2044 12.6876 17.256 11.616L17.268 11.556ZM17.268 9.936C17.213 8.86357 17.0563 7.79879 16.8 6.756H19.392C19.8756 7.776 20.172 8.8728 20.268 9.996L17.268 9.936ZM18.468 5.136H16.32C15.9313 4.04436 15.368 3.02307 14.652 2.112C16.1453 2.7823 17.4423 3.82326 18.42 5.136H18.468ZM6.948 2.112C6.23198 3.02307 5.66865 4.04436 5.28 5.136H3.18C4.15767 3.82326 5.45474 2.7823 6.948 2.112ZM3.168 16.512H5.28C5.66865 17.6036 6.23198 18.6249 6.948 19.536C5.45061 18.8556 4.15314 17.8019 3.18 16.476L3.168 16.512ZM14.64 19.536C15.356 18.6249 15.9193 17.6036 16.308 16.512H18.42C17.4364 17.8072 16.1398 18.8312 14.652 19.488L14.64 19.536Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_770">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        My Domain
+                    </a>
+                    <a href="#" type="button" class="btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_763)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.686 10.462C2.45379 10.6941 2.26958 10.9698 2.1439 11.2731C2.01822 11.5765 1.95354 11.9016 1.95354 12.23C1.95354 12.5583 2.01822 12.8835 2.1439 13.1868C2.26958 13.4902 2.45379 13.7658 2.686 13.998L5.515 16.826C5.88606 17.1967 6.36431 17.4413 6.88207 17.5252C7.39983 17.6091 7.93086 17.528 8.4 17.2935C8.86914 17.0589 9.25262 16.6827 9.49615 16.2182C9.73969 15.7536 9.83095 15.2243 9.757 14.705L10.73 13.732L16.808 20.746C17.0593 21.0356 17.3675 21.2704 17.7134 21.4357C18.0594 21.6011 18.4357 21.6934 18.8189 21.707C19.2021 21.7205 19.5839 21.6551 19.9407 21.5146C20.2975 21.3742 20.6216 21.1618 20.8927 20.8907C21.1638 20.6195 21.3762 20.2955 21.5166 19.9387C21.6571 19.5819 21.7226 19.2 21.709 18.8168C21.6954 18.4337 21.6031 18.0574 21.4378 17.7114C21.2724 17.3655 21.0376 17.0572 20.748 16.806L13.735 10.727L14.707 9.75498C15.2265 9.8292 15.7561 9.73808 16.221 9.49452C16.6858 9.25096 17.0621 8.86731 17.2968 8.39793C17.5314 7.92856 17.6124 7.39725 17.5283 6.87928C17.4441 6.36132 17.1991 5.88296 16.828 5.51198L14 2.68498C13.629 2.31372 13.1505 2.06866 12.6324 1.98453C12.1143 1.90041 11.5829 1.98147 11.1135 2.21625C10.644 2.45103 10.2604 2.8276 10.0169 3.29259C9.77345 3.75759 9.68252 4.28741 9.757 4.80698L4.807 9.75598C4.423 9.70097 4.03146 9.73623 3.66346 9.85896C3.29546 9.98168 2.96113 10.1885 2.687 10.463L2.686 10.462ZM12.94 8.69498L8.698 12.937L6.576 10.816L10.819 6.57298L12.94 8.69498ZM4.1 12.584C4.05351 12.5376 4.01663 12.4824 3.99144 12.4218C3.96626 12.3611 3.95327 12.296 3.95323 12.2303C3.95318 12.1646 3.96607 12.0996 3.99117 12.0389C4.01627 11.9781 4.05308 11.923 4.0995 11.8765C4.14593 11.83 4.20105 11.7931 4.26173 11.7679C4.32241 11.7427 4.38745 11.7297 4.45315 11.7297C4.51885 11.7297 4.58391 11.7425 4.64462 11.7676C4.70534 11.7927 4.76052 11.8296 4.807 11.876L7.636 14.705C7.68376 14.7511 7.72185 14.8063 7.74805 14.8673C7.77426 14.9283 7.78805 14.9939 7.78863 15.0603C7.78921 15.1267 7.77655 15.1925 7.75141 15.254C7.72627 15.3154 7.68915 15.3712 7.6422 15.4182C7.59525 15.4651 7.53943 15.5022 7.47798 15.5274C7.41653 15.5525 7.35069 15.5652 7.2843 15.5646C7.21791 15.564 7.1523 15.5502 7.0913 15.524C7.0303 15.4978 6.97513 15.4597 6.929 15.412L4.1 12.583V12.584ZM11.878 4.80498C11.8302 4.75885 11.7922 4.70368 11.766 4.64268C11.7397 4.58168 11.726 4.51607 11.7254 4.44968C11.7248 4.38329 11.7375 4.31745 11.7626 4.256C11.7877 4.19455 11.8249 4.13873 11.8718 4.09178C11.9188 4.04483 11.9746 4.00771 12.036 3.98257C12.0975 3.95743 12.1633 3.94478 12.2297 3.94535C12.2961 3.94593 12.3617 3.95972 12.4227 3.98593C12.4837 4.01213 12.5389 4.05022 12.585 4.09798L15.414 6.92698C15.4618 6.9731 15.4998 7.02827 15.5261 7.08928C15.5523 7.15028 15.5661 7.21589 15.5666 7.28228C15.5672 7.34867 15.5546 7.41451 15.5294 7.47596C15.5043 7.5374 15.4671 7.59323 15.4202 7.64018C15.3733 7.68712 15.3174 7.72425 15.256 7.74939C15.1945 7.77453 15.1287 7.78718 15.0623 7.7866C14.9959 7.78603 14.9303 7.77223 14.8693 7.74603C14.8083 7.71982 14.7531 7.68173 14.707 7.63398L11.878 4.80498ZM18.32 19.436L12.312 12.504L12.506 12.309L19.439 18.317C19.5189 18.389 19.5832 18.4766 19.6282 18.5743C19.6731 18.672 19.6977 18.7779 19.7005 18.8854C19.7032 18.9929 19.6841 19.0999 19.6442 19.1998C19.6043 19.2996 19.5445 19.3904 19.4685 19.4664C19.3924 19.5425 19.3017 19.6023 19.2018 19.6422C19.1019 19.682 18.9949 19.7012 18.8874 19.6984C18.7799 19.6957 18.674 19.6711 18.5763 19.6261C18.4786 19.5812 18.3911 19.5168 18.319 19.437L18.32 19.436Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_763">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        My Auction
+                    </a>
+                    <a href="#" type="button" class="btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.6328 6.64689C21.3187 5.91948 20.8657 5.2603 20.2992 4.70627C19.7323 4.15058 19.064 3.70898 18.3305 3.40549C17.5699 3.08953 16.7541 2.92781 15.9305 2.9297C14.775 2.9297 13.6477 3.24611 12.668 3.84377C12.4336 3.98674 12.2109 4.14377 12 4.31486C11.7891 4.14377 11.5664 3.98674 11.332 3.84377C10.3523 3.24611 9.225 2.9297 8.06953 2.9297C7.2375 2.9297 6.43125 3.08908 5.66953 3.40549C4.93359 3.71017 4.27031 4.14845 3.70078 4.70627C3.13359 5.25968 2.6805 5.91901 2.36719 6.64689C2.04141 7.40392 1.875 8.20783 1.875 9.03517C1.875 9.81564 2.03438 10.6289 2.35078 11.4563C2.61563 12.1477 2.99531 12.8649 3.48047 13.5891C4.24922 14.7352 5.30625 15.9305 6.61875 17.1422C8.79375 19.1508 10.9477 20.5383 11.0391 20.5945L11.5945 20.9508C11.8406 21.1078 12.157 21.1078 12.4031 20.9508L12.9586 20.5945C13.05 20.536 15.2016 19.1508 17.3789 17.1422C18.6914 15.9305 19.7484 14.7352 20.5172 13.5891C21.0023 12.8649 21.3844 12.1477 21.6469 11.4563C21.9633 10.6289 22.1227 9.81564 22.1227 9.03517C22.125 8.20783 21.9586 7.40392 21.6328 6.64689V6.64689ZM12 19.0969C12 19.0969 3.65625 13.7508 3.65625 9.03517C3.65625 6.64689 5.63203 4.71095 8.06953 4.71095C9.78281 4.71095 11.2688 5.6672 12 7.06408C12.7313 5.6672 14.2172 4.71095 15.9305 4.71095C18.368 4.71095 20.3438 6.64689 20.3438 9.03517C20.3438 13.7508 12 19.0969 12 19.0969Z" fill="black"/>
+                        </svg>
+                        Favorite
+                    </a>
+                    <a href="#" type="button" class="btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 3.99999H2V5.99999H4.3L7.58 15C7.78631 15.5835 8.16807 16.089 8.67294 16.4471C9.1778 16.8051 9.78106 16.9983 10.4 17H19V15H10.4C10.1945 14.9999 9.99399 14.9365 9.8258 14.8184C9.6576 14.7003 9.52987 14.5333 9.46 14.34L9 13H18.28C18.714 12.9994 19.1361 12.8576 19.4824 12.596C19.8288 12.3344 20.0806 11.9673 20.2 11.55L22 5.26999C22.0406 5.13868 22.0538 5.00039 22.0386 4.86377C22.0234 4.72715 21.9802 4.59512 21.9117 4.47595C21.8432 4.35677 21.7509 4.25299 21.6404 4.1711C21.53 4.08921 21.4039 4.03096 21.27 3.99999C21.1806 3.98543 21.0894 3.98543 21 3.99999ZM18.25 11H8.25L6.43 5.99999H19.67L18.25 11Z" fill="black"/>
+                            <path d="M10.5 21C11.3284 21 12 20.3284 12 19.5C12 18.6716 11.3284 18 10.5 18C9.67157 18 9 18.6716 9 19.5C9 20.3284 9.67157 21 10.5 21Z" fill="black"/>
+                            <path d="M16.5 21C17.3284 21 18 20.3284 18 19.5C18 18.6716 17.3284 18 16.5 18C15.6716 18 15 18.6716 15 19.5C15 20.3284 15.6716 21 16.5 21Z" fill="black"/>
+                        </svg>
+                        Cart
+                    </a>
+                </div>
+                <div class="d-flex flex-row" id="right-sec">
+                    <form class="form-inline top-search">
+                        <div class="input-group input-group-inline shadow-none">
+                            <span class="input-group-text border-0 shadow-none">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#93989A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 22L20 20" stroke="#93989A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <input type="text" class="form-control form-control-flush border-0 py-2" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    <div class="dropdown notification-btn rounded-circle">
+                        <a href="#" class="nav-link rounded-circle" id="dropdown-notifications" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bell"></i></a>
+                    </div>
+                    <!-- User Account -->
+                    <div class="dropdown nav-user">
+                        <button class="btn-primary d-flex w-100 align-items-center border-0 bg-transparent px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-3">
+                                <img alt="..." src="assets/images/User.jpg" height="52" width="52" class="avatar avatar-sm rounded-circle">
+                            </span>
+                            <span><i class="bi bi-chevron-down fs-4"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <!-- Main Content -->
+            <div class="page-content d-flex flex-column">
+                <!-- Filter -->
+                <div class="filter d-flex flex-column">
+                    <div class="page-title">
+                        <h5>Buy Domains</h5>
+                    </div>
+                    <!-- Filter Form -->
+                    <form action="" id="filter-form">
+                        <div class="d-flex flex-row filter-tabs">
+                            <button type="button" class="majesticFilter btn active" data-control="MJControl">
+                                <svg class="svgStroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 8L3.304 9.043C3.75828 9.40635 4.28636 9.66624 4.85139 9.80456C5.41643 9.94287 6.00484 9.95628 6.57559 9.84384C7.14634 9.7314 7.6857 9.49583 8.15606 9.15355C8.62642 8.81126 9.01647 8.3705 9.299 7.862L12 3L14.701 7.862C14.9836 8.37042 15.3737 8.81109 15.8441 9.15328C16.3145 9.49546 16.8539 9.73093 17.4247 9.84327C17.9954 9.95561 18.5838 9.94212 19.1488 9.80373C19.7138 9.66534 20.2418 9.40539 20.696 9.042L22 8L20.246 16.77C20.1694 17.1527 20.0065 17.5129 19.7696 17.8231C19.5327 18.1333 19.2281 18.3854 18.879 18.56V18.56C16.7432 19.628 14.388 20.184 12 20.184C9.61202 20.184 7.25684 19.628 5.121 18.56V18.56C4.77193 18.3854 4.46733 18.1333 4.23043 17.8231C3.99353 17.5129 3.83058 17.1527 3.754 16.77L2 8Z" stroke="#010101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 15C10.596 16.333 13.404 16.333 16 15" stroke="#010101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                    
+                                Majestic
+                            </button>
+                            <button type="button" class="advancedFilter btn" data-control="AdvControl">
+                                <svg class="svgStroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6599 10.44L20.6799 14.62C19.8399 18.23 18.1799 19.69 15.0599 19.39C14.5599 19.35 14.0199 19.26 13.4399 19.12L11.7599 18.72C7.58994 17.73 6.29994 15.67 7.27994 11.49L8.25994 7.30001C8.45994 6.45001 8.69994 5.71001 8.99994 5.10001C10.1699 2.68001 12.1599 2.03001 15.4999 2.82001L17.1699 3.21001C21.3599 4.19001 22.6399 6.26001 21.6599 10.44Z" stroke="#010101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.0601 19.39C14.4401 19.81 13.6601 20.16 12.7101 20.47L11.1301 20.99C7.1601 22.27 5.0701 21.2 3.7801 17.23L2.5001 13.28C1.2201 9.31001 2.2801 7.21001 6.2501 5.93001L7.8301 5.41001C8.2401 5.28001 8.6301 5.17001 9.0001 5.10001C8.7001 5.71001 8.4601 6.45001 8.2601 7.30001L7.2801 11.49C6.3001 15.67 7.5901 17.73 11.7601 18.72L13.4401 19.12C14.0201 19.26 14.5601 19.35 15.0601 19.39Z" stroke="#010101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.6399 8.53L17.4899 9.76" stroke="#010101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.6599 12.4L14.5599 13.14" stroke="#010101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                                Advanced
+                            </button>
+                            <button type="button" class="liensFilter btn" data-control="LienControl">
+                                <svg class="svgStroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#010101" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#010101" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#010101" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#010101" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Liens
+                            </button>
+                        </div>
+                        <div class="d-flex filter-controls flex-column">
+                            <div class="majesticControl filterControl flex-column flex-fill" id="MJControl">
+                                <section class="sec-1 d-flex flex-column flex-md-row">
+                                    <div class="formControlInput align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="TFSelector">TF</label>
+                                        <input type="text" id="TFSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="TFslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="15" data-defmax="80"></div>
+                                    </div>
+                                    <div class="formControlInput align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="CFSelector">CF</label>
+                                        <input type="text" id="CFSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span> To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="CFslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="0" data-defmax="50"></div>
+                                    </div>
+                                    <div class="formControlInput align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="RDSelector">RD</label>
+                                        <input type="text" id="RDSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="RDslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="40" data-defmax="100"></div>
+                                    </div>
+                                </section>
+                                <section class="sec-2 d-flex flex-row">
+                                    <div class="formControlInput align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="MajesticTTFSelector">Majestic TTF:</label>
+                                        <input type="text" id="MajesticTTFSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div class="flexBreak"></div>
+                                        <select class="form-select form-select-lg" aria-label="Default select example">
+                                            <option selected>Choose Category</option>
+                                            <option value="1">Category 1</option>
+                                            <option value="2">Category 2</option>
+                                            <option value="3">Category 3</option>
+                                        </select>
+                                        <div id="MajesticTTFslider-range" class="rangeSlider" data-minval="0" data-maxval="100" data-defmin="15" data-defmax="80"></div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="advancedControl filterControl flex-column flex-lg-row flex-fill" id="AdvControl">
+                                <section class="sec-1 d-flex flex-column flex-md-row flex-wrap">
+                                    <div class="domain col">
+                                        <label for="domainName" class="form-label">Domain</label>
+                                        <input type="text" class="form-control" id="domainName" placeholder="Rechercher un domaine...">
+                                    </div>
+                                    <div class="language col">
+                                        <label for="selLanguage" class="form-label">Language</label>
+                                        <select id="selLanguage" class="form-select">
+                                          <option selected>Choisir a langue</option>
+                                          <option>English</option>
+                                          <option>Spanish</option>
+                                          <option>French</option>
+                                        </select>
+                                    </div>
+                                    <div class="formControlInput col align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="PriceSelector">Price</label>
+                                        <input type="text" id="PriceSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="Priceslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="15" data-defmax="80"></div>
+                                    </div>
+                                    <div class="flexBreak d-none d-md-block mb-5"></div>
+                                    <div class="formControlInput col align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="KWSemrushSelector">Keywords Semrush:</label>
+                                        <input type="text" id="KWSemrushSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="KWSemrushslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="15" data-defmax="80"></div>
+                                    </div>
+                                    <div class="formControlInput col align-items-center d-flex flex-row flex-wrap justify-content-between">
+                                        <label for="TrafficSemrushSelector">Traffic Semrush:</label>
+                                        <input type="text" id="TrafficSemrushSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">100</span>
+                                        </div>
+                                        <div id="TrafficSemrushslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="100" data-defmin="15" data-defmax="80"></div>
+                                    </div>
+                                </section>
+                                <section class="sec-2 d-flex">
+                                    <div class="domainExt d-flex flex-wrap align-content-start">
+                                        <span class="mb-4 w-100">Domain Extension</span>
+                                        <div class="d-ext">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension1" name="DomExtension" value="option1" checked>
+                                                <label class="form-check-label" for="domainExtension1">.com</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension2" name="DomExtension" value="option2" checked>
+                                                <label class="form-check-label" for="domainExtension2">.net</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension3" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension3">.org</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension4" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension4">.biz</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension5" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension5">.info</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension6" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension6">.eu</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension7" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension7">.fr</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension8" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension8">.se</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension9" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension9">.de</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension10" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension10">.it</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension11" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension11">.nu</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension12" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension12">.tv</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension13" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension13">.pl</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension14" name="DomExtension" value="option3">
+                                                <label class="form-check-label" for="domainExtension14">.ch</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="domainExtension15" name="DomExtension" value="option3" checked>
+                                                <label class="form-check-label" for="domainExtension15">.io</label>
+                                            </div>
+                                        </div>
+                                        <div class="customDomainExt d-flex flex-row justify-content-between">
+                                            <input type="text" name="customDomainExtension" id="customDomainExtension" class="form-control" placeholder="Bick a TLD">
+                                            <button class="btn saveCustDomainExt">Save</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="liensControl filterControl flex-column flex-md-row flex-wrap" id="LienControl">
+                                <section class="sec-1 d-flex justify-content-between">
+                                    <div class="formControlInput align-items-center d-flex flex-row flex-wrap flex-fill justify-content-between">
+                                        <label for="ValOfLinksSelector">Value Of Links:</label>
+                                        <input type="text" id="ValOfLinksSelector" hidden>
+                                        <div class="minMaxVal">
+                                            <span class="minVal me-2">0</span>To <span class="maxVal ms-2">1000000</span>
+                                        </div>
+                                        <div id="ValOfLinksslider-range" class="w-100 rangeSlider" data-minval="0" data-maxval="1000000" data-defmin="40" data-defmax="900000"></div>
+                                    </div>
+                                </section>
+                                <section class="sec-2 d-flex flex-wrap">
+                                    <span class="mb-4 w-100">Domain authority link</span>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="DALink1" name="DALink" value="option1" checked>
+                                        <label class="form-check-label" for="DALink1">Do not display authority links in Nofollow</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="DALink2" name="DALink" value="option2" checked>
+                                        <label class="form-check-label" for="DALink2">Do not show authority links from subdomains</label>
+                                    </div>
+                                </section>
+                                <div class="flexBreak"></div>
+                                <section class="sec-3 d-flex flex-wrap flex-fill justify-content-between">
+                                    <div class="input-group input-group-inline shadow-none search-domain">
+                                        <span class="input-group-text border-0 shadow-none">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#93989A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M22 22L20 20" stroke="#93989A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control form-control-flush border-0 py-2" placeholder="Search for a Domain" aria-label="Search">
+                                    </div>
+                                    <div class="flexBreak"></div>
+                                    <div class="domainNames">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch1" name="DomainSearch" value="option1">
+                                            <label class="form-check-label" for="domainSearch1">wikipedia.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch2" name="DomainSearch" value="option2">
+                                            <label class="form-check-label" for="domainSearch2">mozilla.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch3" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch3">washingtonpost.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch4" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch4">theguardian.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch5" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch5">gouv.fr</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch6" name="DomainSearch" value="option1">
+                                            <label class="form-check-label" for="domainSearch6">wikipedia.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch7" name="DomainSearch" value="option2">
+                                            <label class="form-check-label" for="domainSearch7">mozilla.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch8" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch8">washingtonpost.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch9" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch9">theguardian.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch10" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch10">gouv.fr</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch11" name="DomainSearch" value="option1">
+                                            <label class="form-check-label" for="domainSearch11">wikipedia.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch12" name="DomainSearch" value="option2">
+                                            <label class="form-check-label" for="domainSearch12">mozilla.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch13" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch13">washingtonpost.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch14" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch14">theguardian.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch15" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch15">gouv.fr</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch16" name="DomainSearch" value="option1">
+                                            <label class="form-check-label" for="domainSearch16">wikipedia.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch17" name="DomainSearch" value="option2">
+                                            <label class="form-check-label" for="domainSearch17">mozilla.org</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch18" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch18">washingtonpost.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch19" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch19">theguardian.com</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="domainSearch20" name="DomainSearch" value="option3">
+                                            <label class="form-check-label" for="domainSearch20">gouv.fr</label>
+                                        </div>
+                                    </div>
+                                    <div class="flexBreak"></div>
+                                    <div class="show-hide-btn mt-4">
+                                        <a class="btn showMoreDomain me-4">Show More</a>
+                                        <a class="btn hideDomain">Hide</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row submitFilter">
+                            <button class="btn resetFilter">Reset</button>
+                            <button class="btn applyFilter">Apply Filter</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Data Table -->
+                <div class="dataTable table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col" style="width: 15%;">URL</th>
+                                <th scope="col" style="width: 6%;">Language</th>
+                                <th scope="col" style="width: 10%;">Traffic</th>
+                                <th scope="col" style="width: 3%;">DA</th>
+                                <th scope="col" style="width: 12%;">Trust Flow</th>
+                                <th scope="col" style="width: 3%;">RD</th>
+                                <th scope="col" style="width: 18%;">Backlinks</th>
+                                <th scope="col" style="width: 7%;">Value of Links</th>
+                                <th scope="col" style="width: 6%;">Price</th>
+                                <th scope="col" style="width: 7%;">Actions</th>
+                                <th scope="col" style="width: 7%;">End in</th>
+                                <th scope="col" style="width: 6%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="url">
+                                <span>Cuisinetogolaise.com</span>
+                                <div class="icons">
+                                    <img src="./assets/icons/anchor.svg" alt="">
+                                    <img src="./assets/icons/file.svg" alt="">
+                                    <img src="./assets/icons/heart-1.svg" alt="">
+                                    <img src="./assets/icons/ahrefs.svg" alt="">
+                                    <img src="./assets/icons/semrush.svg" alt="">
+                                    <img src="./assets/icons/majestic.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="language text-center">
+                                <div class="icons">
+                                    <img src="./assets/icons/twemoji_flag-france.svg" alt="">
+                                </div>
+                                <span>French</span>
+                            </td>
+                            <td class="traffic">
+                                <p>Google Traffic: <span>22</span></p>
+                                <p>Key Words: <span>33</span></p>
+                            </td>
+                            <td class="da text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="trustFlow text-center">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">50</div>
+                                </div>
+                                <a class="progress-bottom-text">Voir TTF</a>
+                            </td>
+                            <td class="rd text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="backlinks">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></li>
+                                </ul>
+                                  <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backlink1">
+                                    and More 59
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="backlink1" tabindex="-1" aria-labelledby="backlink1Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h2 class="modal-title" id="backlink1Label">Baclinks</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalBacklinks d-flex flex-wrap">
+                                                <span class="backlinkName">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SOCIETE.SACEM.FR <span>TF 59 RD 6353</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">CNC.FR <span>TF 61 RD 6309</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">MAC4EVER.COM <span>TF 48 RD 3611</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">FUNRADIO.FR <span>TF 37 RD 2061</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SLATE.FR <span>TF 30 RD 19748</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ZDNET.FR <span>TF 59 RD 13940</span><i class="bi bi-info-circle-fill"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="valoflinks text-center">
+                                <span class="fw-semibold d-block">
+                                    $1280.00
+                                </span>
+                                <a href="" class="moredetails">See Details</a>
+                            </td>
+                            <td class="price text-center">
+                                <span class="fw-semibold d-block">$99.00</span>
+                                <span class="price-bidder">99 Bidder</span>
+                            </td>
+                            <td class="actions text-center">
+                                <button class="btn bid-btn">BID</button>
+                            </td>
+                            <td class="endIn text-center">
+                                <span>12 Days,<br>18 Hours</span>
+                            </td>
+                            <td class="win text-center">
+                                <span>You're Winning</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="url">
+                                <span>Cuisinetogolaise.com</span>
+                                <div class="icons">
+                                    <img src="./assets/icons/anchor.svg" alt="">
+                                    <img src="./assets/icons/file.svg" alt="">
+                                    <img src="./assets/icons/heart-1.svg" alt="">
+                                    <img src="./assets/icons/ahrefs.svg" alt="">
+                                    <img src="./assets/icons/semrush.svg" alt="">
+                                    <img src="./assets/icons/majestic.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="language text-center">
+                                <div class="icons">
+                                    <img src="./assets/icons/twemoji_flag-france.svg" alt="">
+                                </div>
+                                <span>French</span>
+                            </td>
+                            <td class="traffic">
+                                <p>Google Traffic: <span>22</span></p>
+                                <p>Key Words: <span>33</span></p>
+                            </td>
+                            <td class="da text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="trustFlow text-center">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">50</div>
+                                </div>
+                                <a class="progress-bottom-text">Voir TTF</a>
+                            </td>
+                            <td class="rd text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="backlinks">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></li>
+                                </ul>
+                                  <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backlink2">
+                                    and More 59
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="backlink2" tabindex="-1" aria-labelledby="backlink2Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h2 class="modal-title" id="backlink2Label">Baclinks</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalBacklinks d-flex flex-wrap">
+                                                <span class="backlinkName">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SOCIETE.SACEM.FR <span>TF 59 RD 6353</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">CNC.FR <span>TF 61 RD 6309</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">MAC4EVER.COM <span>TF 48 RD 3611</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">FUNRADIO.FR <span>TF 37 RD 2061</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SLATE.FR <span>TF 30 RD 19748</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ZDNET.FR <span>TF 59 RD 13940</span><i class="bi bi-info-circle-fill"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="valoflinks text-center">
+                                <span class="fw-semibold d-block">
+                                    $1280.00
+                                </span>
+                                <a href="" class="moredetails">See Details</a>
+                            </td>
+                            <td class="price text-center">
+                                <span class="fw-semibold d-block">$99.00</span>
+                                <span class="price-bidder">99 Bidder</span>
+                            </td>
+                            <td class="actions text-center">
+                                <button class="btn bid-btn">BID</button>
+                            </td>
+                            <td class="endIn text-center">
+                                <span>12 Days,<br>18 Hours</span>
+                            </td>
+                            <td class="win text-center">
+                                <span>You're Winning</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="url">
+                                <span>Cuisinetogolaise.com</span>
+                                <div class="icons">
+                                    <img src="./assets/icons/anchor.svg" alt="">
+                                    <img src="./assets/icons/file.svg" alt="">
+                                    <img src="./assets/icons/heart-1.svg" alt="">
+                                    <img src="./assets/icons/ahrefs.svg" alt="">
+                                    <img src="./assets/icons/semrush.svg" alt="">
+                                    <img src="./assets/icons/majestic.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="language text-center">
+                                <div class="icons">
+                                    <img src="./assets/icons/twemoji_flag-france.svg" alt="">
+                                </div>
+                                <span>French</span>
+                            </td>
+                            <td class="traffic">
+                                <p>Google Traffic: <span>22</span></p>
+                                <p>Key Words: <span>33</span></p>
+                            </td>
+                            <td class="da text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="trustFlow text-center">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">50</div>
+                                </div>
+                                <a class="progress-bottom-text">Voir TTF</a>
+                            </td>
+                            <td class="rd text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="backlinks">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></li>
+                                </ul>
+                                  <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backlink3">
+                                    and More 59
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="backlink3" tabindex="-1" aria-labelledby="backlink3Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h2 class="modal-title" id="backlink3Label">Baclinks</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalBacklinks d-flex flex-wrap">
+                                                <span class="backlinkName">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SOCIETE.SACEM.FR <span>TF 59 RD 6353</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">CNC.FR <span>TF 61 RD 6309</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">MAC4EVER.COM <span>TF 48 RD 3611</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">FUNRADIO.FR <span>TF 37 RD 2061</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SLATE.FR <span>TF 30 RD 19748</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ZDNET.FR <span>TF 59 RD 13940</span><i class="bi bi-info-circle-fill"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="valoflinks text-center">
+                                <span class="fw-semibold d-block">
+                                    $1280.00
+                                </span>
+                                <a href="" class="moredetails">See Details</a>
+                            </td>
+                            <td class="price text-center">
+                                <span class="fw-semibold d-block">$99.00</span>
+                                <span class="price-bidder">99 Bidder</span>
+                            </td>
+                            <td class="actions text-center">
+                                <button class="btn bid-btn">BID</button>
+                            </td>
+                            <td class="endIn text-center">
+                                <span>12 Days,<br>18 Hours</span>
+                            </td>
+                            <td class="win text-center">
+                                <span>You're Winning</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="url">
+                                <span>Cuisinetogolaise.com</span>
+                                <div class="icons">
+                                    <img src="./assets/icons/anchor.svg" alt="">
+                                    <img src="./assets/icons/file.svg" alt="">
+                                    <img src="./assets/icons/heart-1.svg" alt="">
+                                    <img src="./assets/icons/ahrefs.svg" alt="">
+                                    <img src="./assets/icons/semrush.svg" alt="">
+                                    <img src="./assets/icons/majestic.svg" alt="">
+                                </div>
+                            </td>
+                            <td class="language text-center">
+                                <div class="icons">
+                                    <img src="./assets/icons/twemoji_flag-france.svg" alt="">
+                                </div>
+                                <span>French</span>
+                            </td>
+                            <td class="traffic">
+                                <p>Google Traffic: <span>22</span></p>
+                                <p>Key Words: <span>33</span></p>
+                            </td>
+                            <td class="da text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="trustFlow text-center">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">50</div>
+                                </div>
+                                <a class="progress-bottom-text">Voir TTF</a>
+                            </td>
+                            <td class="rd text-center">
+                                <span>96</span>
+                            </td>
+                            <td class="backlinks">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></li>
+                                    <li class="list-group-item">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></li>
+                                </ul>
+                                  <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#backlink4">
+                                    and More 59
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="backlink4" tabindex="-1" aria-labelledby="backlink4Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h2 class="modal-title" id="backlink4Label">Baclinks</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modalBacklinks d-flex flex-wrap">
+                                                <span class="backlinkName">FRANCEBLEU.FR <span>TF 56 RD 34590</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">UNIFRANCE.ORG <span>TF 51 RD 8602</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">LA-CROIX.COM <span>TF 64 RD 25011</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">BIENPUBLIC.COM <span>TF 52 RD 6537</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SOCIETE.SACEM.FR <span>TF 59 RD 6353</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">CNC.FR <span>TF 61 RD 6309</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">MAC4EVER.COM <span>TF 48 RD 3611</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ROGARD.BLOG.SACD.FR <span>TF 57 RD 2629</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">FUNRADIO.FR <span>TF 37 RD 2061</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">SLATE.FR <span>TF 30 RD 19748</span><i class="bi bi-info-circle-fill"></i></span>
+                                                <span class="backlinkName">ZDNET.FR <span>TF 59 RD 13940</span><i class="bi bi-info-circle-fill"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="valoflinks text-center">
+                                <span class="fw-semibold d-block">
+                                    $1280.00
+                                </span>
+                                <a href="" class="moredetails">See Details</a>
+                            </td>
+                            <td class="price text-center">
+                                <span class="fw-semibold d-block">$99.00</span>
+                                <span class="price-bidder">99 Bidder</span>
+                            </td>
+                            <td class="actions text-center">
+                                <button class="btn bid-btn">BID</button>
+                            </td>
+                            <td class="endIn text-center">
+                                <span>12 Days,<br>18 Hours</span>
+                            </td>
+                            <td class="win text-center">
+                                <span>You're Winning</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Faqs -->
+                <div class="faqs d-flex flex-column">
+                    <h5 class="sec-title">FAQ | Frequently Asked Questions</h5>
+                    <div class="accordion" id="faq1">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Comment fonctionnent les enchères ?
+                            </button>
+                          </h2>
+                          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faq1">
+                            <div class="accordion-body">
+                                Les enchères se terminent tous les lundis à 17h. Au cas où une enchère est placée dans les 5 dernières minutes, le compte à rebours repasse alors à 5 minutes. Ex, une enchère est placée alors qu'il ne reste plus que 30 secondes, l'enchère repart alors à 5 minutes.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq2">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                Pourquoi les enchères durent-elles 2 mois ?
+                            </button>
+                          </h2>
+                          <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#faq2">
+                            <div class="accordion-body">
+                                Car le transfert des domaines que nous récupérons est souvent bloqué pendant 60 jours. Il ne serait donc pas possible de le transférer avant.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq3">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                Que se passe t-il si personne n'enchéri sur un domaine ?
+                            </button>
+                          </h2>
+                          <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#faq3">
+                            <div class="accordion-body">
+                                Le domaine est alors vendu à prix fixe. Notre objectif n'est pas tant de vendre le domaine lors de l'enchère, mais de le vendre sous 12 mois maximum.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq4">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                Comment se passe le transfert d'un domaine ?
+                            </button>
+                          </h2>
+                          <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4" data-bs-parent="#faq4">
+                            <div class="accordion-body">
+                                Après paiement du domaine, vous recevrez dans l'interface de votre compte Getexpi l'Auth Code vous permettant le transfert du domaine.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq5">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                Pourquoi faut-il déposer 50€ sur son compte Getexpi afin de participer aux enchères ?
+                            </button>
+                          </h2>
+                          <div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5" data-bs-parent="#faq5">
+                            <div class="accordion-body">
+                                C'est tout simplement pour empêcher les fraudes et de limiter les problèmes de paiements des enchères gagnées. Vous pourrez bien entendu utiliser votre dépôt pour payer un domaine acheté.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq6">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                Que signifient les métriques affichées dans le tableau ?
+                            </button>
+                          </h2>
+                          <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6" data-bs-parent="#faq6">
+                            <div class="accordion-body">
+                                Le TF (Trust Flow) et le TTF (Topical Trust Flow) sont des données fournies par Majestic.com. C'est l'indice de confiance du site de façon général (TF) et dans une catégorie spécifique (TTF). Ces chiffres doivent être les plus élevés possibles.<br>
+                                Le DA (Domain Authority) est une donnée fournie par Moz.com. C'est l'autorité du domaine. Ce chiffre doit être le plus élevé possible.<br>
+                                Le RD (Referring Domains) est fourni par Majestic.com. Il indique le nombre de sites internet faisant un lien vers le domaine expiré. 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="faq7">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading7">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                Comment lire la colonne "liens" ?
+                            </button>
+                          </h2>
+                          <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7" data-bs-parent="#faq7">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>
+                                        1/ Les liens d'autorité<br><br>
+                                        Nous vous indiquons ici tous les liens d'autorité que possèdent un domaine. Pour cela nous ciblons uniquement ceux ayant au minimum 1500 RD (Referring Domains) et français, sauf rares exceptions telles que les .edu<br><br>                                        
+                                        Les liens d'autorité sont des liens extrêmement difficiles à obtenir et qui se monétisent plusieurs centaines voire milliers d'euros à l'achat quand cela est possible.<br><br>
+                                    </li>
+                                    <li>
+                                        2/ Les liens payants<br><br>                                        
+                                        Il nous est possible de connaitre la valeur de certains liens créés grâce à notre plateforme de Netlinking Ereferer. C'est le prix que vous auriez à payer si vous achetiez ces liens/articles.
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Subscription CTA -->
+                <div class="subscribe-sec d-flex flex-column flex-md-row">
+                    <div class="assetImg">
+                        <img src="./assets/images/woman-asset.svg" alt="">
+                    </div>
+                    <div class="rightPart d-flex flex-column">
+                        <h5>Inscription à notre newsletter</h5>
+                        <p>Orci cursus mattis sit vestibulum ut morbi lectus vitae eget. Diam convallis gravida volutpat libero.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email here">
+                            <button type="button" class="btn btn-outline-secondary">S’abonner</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="d-flex flex-column">
+                <div class="topPart d-flex flex-column flex-md-row justify-content-between">
+                    <div class="brand align-self-start align-self-md-center">
+                        <img src="assets/images/getexpi-alt.svg" alt="">
+                    </div>
+                    <div class="service">
+                        <h5>Nous suivre</h5>
+                        <p>Getexpi est un outil gratuit proposé par la plateforme de netlinking Ereferer.com</p>
+                    </div>
+                    <div class="social">
+                        <h5>Connecte-toi avec nous</h5>
+                        <div class="d-flex flex-column flex-lg-row">
+                            <div class="insta d-flex justify-content-start"><i class="bi bi-instagram"></i>@getexpi</div>
+                            <div class="twitter d-flex justify-content-start"><i class="bi bi-twitter"></i>@getexpi</div>
+                            <div class="facebook d-flex justify-content-start"><i class="bi bi-facebook"></i>@getexpi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botPart d-flex flex-row flex-wrap justify-content-between align-items-center">
+                    <hr>
+                    <a href="">Privacy Policy</a>
+                    <span class="copyright">Copyright © 2022 GetExpi | Powered by GetExpi</span>
+                    <a href="">Terms of Service</a>
+                </div>
+            </footer>
+        </div>
+        <script src="style.js"></script>
+    </body>
+</html>
